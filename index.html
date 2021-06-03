@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name = "descrption" content = "30MFF Website">
+	<meta name = "author" content=" Prince Larbi Ampofo">
+	<meta name = "viewport" content="width=device-width">
+
+	<title>Making a Film</title>
+
+	<!-- Css and other links -->
+	<link rel="stylesheet" href = "style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="container">
+
+		<!-- Navigation bar -->
+		<nav>
+			<div class="title">
+				<h3>MAKING A FILM</h3>
+			</div>
+			<ul class="menu">
+				<li class="home">
+					<a href="#home">HOME</a>
+				</li>
+				<li class="videoTitle">
+					<a href="#videoTitle">FILM</a>
+				</li>
+				<li class="actorsTitle">
+					<a href="#actorsTitle">CAST</a>
+				</li>
+				<li class="FTitle">
+					<a  href="#FTitle">FEEDBACK</a>
+				</li>
+			</ul>
+			<div class="icons">
+				<a href="https://www.facebook.com/flimhd028" class="fa fa-facebook"></a>
+				<a href="https://www.instagram.com/filmthusiast/" class="fa fa-instagram"></a>
+				<a href="https://www.youtube.com/watch?v=1FhmnB6SwBc" class="fa fa-youtube"></a>
+			</div>
+			<div class ="menu-lines">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+
+		<!-- Home page -->
+		<section class="imgs" id="home">
+			<div class="welcome">
+				<h3 >Welcome to our Page</h3>
+				<div class="typewriting">
+					<p>We</p>
+					<p class="typing">love</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Film page -->
+		<section id="videoTitle">
+			<h4 class="section2-title">FILM</h4>
+		</section>
+		<div class="video-contents">
+			<div class="b_img">
+				<div class="videodescription">
+					<iframe class="video-play" src="https://drive.google.com/file/d/1d_PYVu_oAnRnWO9sJ_g_iXvoBNP6mD08/preview" title="Quarantine Film"></iframe>
+					<div class="like-section">
+						<button class="like_btn">
+							<span id="icon"><i class="far fa-thumbs-up"></i></span>
+							<span id="count">0</span>
+						</button>
+						<button class="dislike_btn">
+							<span id="icon1"><i class="far fa-thumbs-down"></i></span>
+							<span id="count1">0</span>
+						</button>
+					</div>
+					<p class="description">Making a film Ep. 1</p>
+					<p class="description-title">Description: </p>
+					<p class="description-content">In this episode of making a film, we show you how to create a film. Sounds fun? Get your filming tools ready!</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Crew page -->
+		<section id="actorsTitle">
+				<h4 class="section3-title">CAST</h4>
+		</section>
+		<div class="actorscontent">
+			<div class="A_img1">
+				<img src="Prince.jpg" alt="">
+				<p>
+					Prince
+				</p>
+			</div>
+			<div class="A_img2">
+				<img src="6.jpg" alt="">
+				<p>
+					Nouf 
+				</p>
+			</div>
+			<div class="A_img3">
+				<img src="Oyungerel.jpg" alt="">
+				<p>
+					Oyungerel
+				</p>
+			</div>
+			<div class="A_img4">
+				<img src="Shyngys.jpg" alt="">
+				<p>
+					Shyngys 
+				</p>
+			</div>
+		</div>
+
+		<!-- Feedback Page -->
+		<section class="Fcontent" id="FTitle">
+			<div class="message">
+				<h3>We value your feedback!</h3>
+				<form>
+				    <label for="name">Name</label>
+				    <input type="text" id="name" name="name" placeholder="Your name..">
+
+				    <label for="msg">Message</label>
+				    <textarea id="msg" placeholder="Your message.."></textarea>
+
+				    <label for="country">Feedback on</label>
+				    <select id="opt" name="opt">
+				      <option value="web">Website</option>
+				      <option value="film">Film</option>
+				    </select>
+				    <input id="sub" type="submit" value="Submit">
+				    <p id="sent"></p>
+			  	</form>
+			</div>
+		</section>
+	</div>
+
+<!-- Javascript -->
+<script src ="main.js"></script>
+	
+</body>
+</html>
