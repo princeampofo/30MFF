@@ -155,14 +155,26 @@ window.addEventListener('scroll',() =>{
 document.getElementById('sub').addEventListener('click', function(e){
 
 		e.preventDefault();
-		document.getElementById('name').value = '';
-		document.getElementById('msg').value = '';
-	 	document.getElementById("sent").innerHTML = "Feedback Sent!";
-		
-	 	clearTimeout(timeout);
-	  	timeout = setTimeout(function() {
-	    	document.getElementById("sent").innerHTML = "";
-		}, 1000);
+
+		if(document.getElementById('name').value.length === 0 || document.getElementById('msg').value.length === 0){
+				document.getElementById("sent").innerHTML = "Input fields missing!";
+				clearTimeout(timeout);
+		  		timeout = setTimeout(function() {
+		    		document.getElementById("sent").innerHTML = "";
+			}, 1000);
+
+		}
+
+		else{
+			document.getElementById('name').value = '';
+			document.getElementById('msg').value = '';
+		 	document.getElementById("sent").innerHTML = "Feedback Sent!";
+			
+		 	clearTimeout(timeout);
+		  	timeout = setTimeout(function() {
+		    	document.getElementById("sent").innerHTML = "";
+			}, 1000);
+		}
 
 });
 
