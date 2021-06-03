@@ -197,6 +197,15 @@ nav{
 
 }
 
+.scroll-active .menu-appear{
+	background-color: white;
+}
+
+
+.scroll-active .menu-lines div{
+	background-color: blue;
+}
+
 /*Home page*/
 .imgs{
 	width:100%;
