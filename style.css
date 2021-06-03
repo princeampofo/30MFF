@@ -331,13 +331,6 @@ section{
 		height: 60vh;
 }
 
-/*@media screen and (max-width: 770px){
-		.videodescription{
-			margin:auto;
-			width: 900px;
-			height: 700px;
-	}
-}*/
 
 .description{
 	width: 700px;
