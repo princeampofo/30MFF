@@ -51,7 +51,7 @@ nav{
 
 
 .is-active{
-	border: 2px solid blue;
+	border: 2px solid black;
 	padding: 1px 1px;
 	background-color: white;
 	transition: background-color 0.3s ease;
@@ -177,20 +177,23 @@ nav{
 }
 
 .scroll-active{
-	background-color: #242943;
+	background-color: white;
 	box-shadow: 0 3px 1rem rgba(0,0,0,0.3);
 	min-height: 9vh;
 	transition:min-height 0.5s ease-in;
 }
 
 
-.scroll-active .menu{
-	background-color: #242943;
-
+.scroll-active .menu a{
+	color: blue;
 }
 
-.scroll-active .icons{
-	background-color: #242943;
+.scroll-active .title h3{
+	color: blue;
+}
+
+.scroll-active .icons a{
+		color: blue;
 
 }
 
